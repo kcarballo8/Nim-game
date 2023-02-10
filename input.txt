@@ -1,0 +1,89 @@
+
+int concat(int a, int b)
+{
+	string s1 = to_string(a);
+	string s2 = to_string(b);
+	string s = s1 + s2;
+	int c = stoi(s);
+	return c;
+}
+
+string checkIfInBounds(string input) {
+	string pairs;
+	int x;
+	for (int i = 0; i < 1; i++) {
+		int fdigit = input[i] - '0';
+		int sdigit = input[i + 1] - '0';
+		if (fdigit == 0) {
+			if (sdigit > 1 && sdigit <= 9) {
+				pairs += to_string(0);
+				pairs += to_string(sdigit);
+			}
+		}
+		else {
+			int pair = concat(input[i] - '0', input[i + 1] - '0');
+			if (pair > 1 && pair <= 20) {
+				pairs += to_string(pair);
+			}
+		}
+	}
+	return pairs;
+}
+
+string checkPiles(int columns) {
+
+	string piles, totalPiles;
+
+	for (int i = 0; i < columns; i++) {
+
+		cout << "Input the number of rocks for pile " << i + 1 << ": ";
+		cin >> piles;
+		totalPiles += checkIfInBounds(piles);
+	}
+
+	return totalPiles;
+}
+
+
+
+
+
+
+
+
+in main:
+
+
+/*****************Logic for input********************/
+			std::cout << std::endl;
+			bool check = true;
+			string boardInput;
+			int columns;
+			cout << "Input number of piles for the Nim Game: ";
+			cin >> columns;
+
+			while (check) {
+				if (columns > 1 && columns < 9) {
+					boardInput = checkPiles(columns);
+					check = false;
+				}
+				else {
+					std::cout << "Input piles again: ";
+					std::cin >> columns;
+					std::cout << std::endl;
+					check = false;
+				}
+			}
+			board.resize(columns);
+			myMove = true;
+
+			char* char_arr;
+			string str_obj(boardInput);
+			char_arr = &boardInput[0];
+			
+
+			UDP_send(s, char_arr, strlen(char_arr) + 1, (char*)host.c_str(), (char*)port.c_str());
+
+
+			/*****************Logic for input********************/
+			

@@ -1,0 +1,20 @@
+﻿  Nim.cpp
+  UDP_recv.cpp
+  UDP_send.cpp
+  client_main.cpp
+  connectsock.cpp
+  getBroadcastAddress.cpp
+  getServers.cpp
+  passivesock.cpp
+  playNim.cpp
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(16,20): warning C4018: '<': signed/unsigned mismatch
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(54,20): warning C4018: '<': signed/unsigned mismatch
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(67,20): warning C4018: '<': signed/unsigned mismatch
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(79,20): warning C4018: '<': signed/unsigned mismatch
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(96,20): warning C4018: '<': signed/unsigned mismatch
+\\Mac\Home\Desktop\Nim\Nim\playNim.cpp(109,14): warning C4018: '>': signed/unsigned mismatch
+  server_main.cpp
+  wait.cpp
+  Generating Code...
+\\Mac\Home\Desktop\Nim\Nim\client_main.cpp(92): warning C4715: 'client_main': not all control paths return a value
+  Nim.vcxproj -> \\Mac\Home\Desktop\Nim\Nim\Debug\Nim.exe
